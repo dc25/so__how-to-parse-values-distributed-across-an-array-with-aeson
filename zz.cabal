@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 2776f183c1769c5b3e5718c44a550c1941c039b69622d609226160228e16fc64
+-- hash: 0a21e7cc458b1d5b97d58d022b5bcb5aeff2ccadae205796ccd4e180dd7e16ef
 
 name:           zz
 version:        0.1.0.0
@@ -35,8 +35,7 @@ library
   build-depends:
       aeson
     , base >=4.7 && <5
-    , bytestring
-    , unordered-containers
+    , containers
   default-language: Haskell2010
 
 executable zz-exe
@@ -49,8 +48,7 @@ executable zz-exe
   build-depends:
       aeson
     , base >=4.7 && <5
-    , bytestring
-    , unordered-containers
+    , containers
     , zz
   default-language: Haskell2010
 
@@ -65,7 +63,6 @@ test-suite zz-test
   build-depends:
       aeson
     , base >=4.7 && <5
-    , bytestring
-    , unordered-containers
+    , containers
     , zz
   default-language: Haskell2010
